@@ -7,6 +7,7 @@ import javax.persistence.*;
 
 @Data
 @Table(name = "artists")
+@Entity
 public class Artist {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,5 +24,15 @@ public class Artist {
         this.type = type;
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public Artist(Integer id, Type type, String firstName, String lastName) {
+        this.id = id;
+        this.type = type;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Artist() {
     }
 }
