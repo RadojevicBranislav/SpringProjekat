@@ -19,6 +19,9 @@ public class Artist {
 
     private String lastName;
 
-
-
+    public Artist(Type type, String firstName, String lastName) {
+        this.type = type;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 }
