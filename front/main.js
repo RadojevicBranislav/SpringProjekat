@@ -1,12 +1,12 @@
 $(document).ready(function() {
-    works();
+    works(); //has to be changed in generateCards();
 });
 
 
 
 function works(){
 
-    fetch('http://localhost:8080/artists')
+    fetch('http://localhost:8080/artists')//link has to be changed
     .then((response) =>{ response.json();
     })
     .then((myJson) => console.log(json));
@@ -15,7 +15,7 @@ function works(){
 function generateCards()
 {
 
-    fetch('http://10.20.1.52:8080/artists')
+    fetch('http://10.20.1.52:8080/artists')//link has to be changed
     .then((response) =>{ response.json();
     })
     .then((myJson) => {
